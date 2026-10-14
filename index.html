@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Baek | Portfolio</title>
+  <meta name="description" content="Portfolio of Kevin Baek: projects, research, and contact." />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">kevvnbk</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Kevin Baek</h1>
+      <p class="tagline">Your one-line tagline here, e.g. "Student researcher interested in LLM safety and interpretability."</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View my work</a>
+        <a class="btn" href="assets/docs/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <img class="avatar" src="assets/images/profile.jpg" alt="Photo of Kevin Baek"
+             onerror="this.style.display='none'" />
+        <div>
+          <p>Write a short paragraph about yourself: who you are, what you study, and what you're excited about.</p>
+          <p>Add a second paragraph about your interests, goals, or what you're looking for (internships, research positions, collaborations).</p>
+          <ul class="skills">
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>Machine Learning</li>
+            <li>NLP</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>One or two sentences on what it does, why you built it, and what you learned.</p>
+          <p class="tags"><span>Python</span><span>PyTorch</span></p>
+          <p class="links">
+            <a href="https://github.com/kevvnbk" target="_blank" rel="noopener">Code →</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Another project. Mention the problem, your approach, and the result.</p>
+          <p class="tags"><span>NLP</span><span>RAG</span></p>
+          <p class="links">
+            <a href="https://github.com/kevvnbk" target="_blank" rel="noopener">Code →</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>A third project, or delete this card if you only have two for now.</p>
+          <p class="tags"><span>Web</span><span>JavaScript</span></p>
+          <p class="links">
+            <a href="https://github.com/kevvnbk" target="_blank" rel="noopener">Code →</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience &amp; Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2026 – Present</span>
+          <h3>Role / Position</h3>
+          <p class="where">Organization or Lab</p>
+          <p>Short description of what you worked on and your contributions.</p>
+        </li>
+        <li>
+          <span class="when">2022 – Present</span>
+          <h3>B.S. in Your Major</h3>
+          <p class="where">Your University</p>
+          <p>Relevant coursework, honors, or activities.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Interested in working together or just want to say hi? Reach out:</p>
+      <ul class="contact-list">
+        <li><a href="mailto:kevinbaek01@gmail.com">kevinbaek01@gmail.com</a></li>
+        <li><a href="https://github.com/kevvnbk" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Kevin Baek. Built with HTML, CSS &amp; JS, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
