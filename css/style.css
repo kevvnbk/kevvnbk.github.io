@@ -100,6 +100,9 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
 .avatar { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 1px solid var(--border); }
 .skills { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 1.2rem 0 0; }
 .skills li { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.8rem; font-size: 0.9rem; }
+.skill-groups { display: grid; gap: 1rem; margin-top: 1.6rem; }
+.skill-groups h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0; }
+.skill-groups .skills { margin-top: 0.5rem; }
 
 /* ---------- Project cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
@@ -115,6 +118,8 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tags span { font-size: 0.78rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 0.1rem 0.5rem; }
 .links { margin-bottom: 0 !important; }
+.card-meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.award { font-size: 0.78rem; font-weight: 600; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0.05rem 0.6rem; }
 
 /* ---------- Timeline ---------- */
 .timeline { list-style: none; margin: 0; padding: 0 0 0 1.2rem; border-left: 2px solid var(--border); }
@@ -131,6 +136,10 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
 }
 .when { font-size: 0.85rem; color: var(--muted); }
 .where { margin: 0 0 0.3rem; font-weight: 600; }
+.timeline ul { margin: 0.3rem 0 0; padding-left: 1.1rem; color: var(--muted); }
+.timeline ul li { margin-bottom: 0.4rem; }
+.timeline ul li::before { content: none; }
+.timeline > li > p:not(.where) { color: var(--muted); margin: 0.3rem 0 0; }
 
 /* ---------- Contact ---------- */
 .contact-list { list-style: none; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
