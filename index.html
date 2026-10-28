@@ -6,14 +6,14 @@
     <title>Minyoung (Kevin) Baek | Portfolio</title>
     <meta
       name="description"
-      content="Minyoung (Kevin) Baek: CS &amp; Business student at Korea University researching LLMs and RAG."
+      content="Minyoung (Kevin) Baek: Korea University undergraduate researching how AI and online platforms shape public discourse, and how communities can govern the systems they use."
     />
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#home">kevvnbk</a>
+      <a class="logo" href="#home">Minyoung (Kevin) Baek</a>
       <button
         class="nav-toggle"
         aria-label="Toggle navigation"
@@ -23,8 +23,9 @@
       </button>
       <nav class="site-nav" id="site-nav">
         <a href="#about">About</a>
+        <a href="#research">Research</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
       </nav>
@@ -36,12 +37,12 @@
         <p class="eyebrow">Hello, I'm</p>
         <h1>Minyoung (Kevin) Baek</h1>
         <p class="tagline">
-          Computer Science &amp; Business student at Korea University,
-          researching LLMs, retrieval-augmented generation, and AI tools for
-          online communities.
+          Undergraduate at Korea University studying how AI and online platforms
+          shape what people believe and trust, and how communities can
+          collectively govern the systems that mediate their lives.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View my work</a>
+          <a class="btn btn-primary" href="#research">View my research</a>
           <a
             class="btn"
             href="assets/docs/Minyoung_Baek_Resume.pdf"
@@ -64,19 +65,37 @@
           />
           <div>
             <p>
-              I'm a double major in Business Administration and Computer
-              Science at Korea University (GPA 4.25/4.5). I spent Spring 2026
-              as an exchange student at the University of Washington, funded by
-              the Korea-U.S. High-Tech Industry Scholarship.
+              I'm a double major in Business Administration and Computer Science
+              at Korea University (GPA 4.25/4.5). I spent Spring 2026 as an
+              exchange student at the University of Washington, funded by the
+              Korea-U.S. High-Tech Industry Scholarship.
             </p>
             <p>
-              My research is about making large language models more reliable
-              and useful. At Korea University's Trustworthy AI Lab I worked on
-              knowledge fusion for RAG. I'm now at the UW Social Futures Lab,
-              building generative UI agents that help communities write and
-              deploy their own governance policies.
+              I study how AI and online platforms affect public discourse, and
+              how these systems might better support informed reasoning and
+              cooperation across sociopolitical divides. Living and studying in
+              Korea, China, and the United States made me attentive to how
+              differently the same events can be framed, and led me to ask how
+              hostile frames move between online communities, news media, and
+              political discourse, and why some gain traction while others fade.
             </p>
-            <div class="skill-groups">
+            <p>
+              Going forward, I want to use LLMs to identify recurring frames and
+              network models to trace how they circulate, and LLM agent
+              simulations to explore whether AI-generated content changes how
+              divisive narratives spread. My long-term goal is to turn this
+              evidence into policy research on misinformation, polarization, and
+              responsible AI adoption.
+            </p>
+            <h3>Research Interests</h3>
+            <ul class="skills">
+              <li>Computational Social Science</li>
+              <li>AI &amp; Public Discourse</li>
+              <li>Framing &amp; Polarization</li>
+              <li>Community Governance</li>
+              <li>Trustworthy LLMs</li>
+            </ul>
+            <!-- <div class="skill-groups">
               <div>
                 <h3>Languages</h3>
                 <ul class="skills">
@@ -116,9 +135,70 @@
                   <li>GCP</li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research" class="section">
+        <h2>Research Experience</h2>
+        <ol class="timeline">
+          <li>
+            <span class="when">May 2026 – Present · Seattle, WA</span>
+            <h3>Supporting Community Governance Design</h3>
+            <p class="where">
+              Undergraduate Research Assistant · Social Futures Lab, University
+              of Washington (Advisor: Amy X. Zhang)
+            </p>
+            <p>
+              Building a system that helps online communities explore governance
+              choices, compare alternatives, and check whether a proposed policy
+              reflects their intentions.
+            </p>
+            <ul>
+              <li>
+                Designed a generative UI authoring agent that guides non-expert
+                users through writing community governance policies, the first
+                stage of a multi-stage feedback framework.
+              </li>
+              <li>
+                Built an integration layer that runs community-authored policies
+                through PolicyKit as live, platform-agnostic community bots, and
+                designed an event-driven runtime that fixes state-persistence
+                and concurrency bugs in policy execution.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="when">Jan 2025 – Feb 2026 · Seoul, South Korea</span>
+            <h3>Calibrating LLM Reliance on Retrieved Information</h3>
+            <p class="where">
+              Undergraduate Research Assistant · Trustworthy AI Lab (TAIL),
+              Korea University
+            </p>
+            <p>
+              Investigated when a large language model should rely on retrieved
+              information rather than its internal knowledge.
+            </p>
+            <ul>
+              <li>
+                Proposed a steering-vector mechanism that uses confidence scores
+                to guide the model toward retrieved context or internal
+                knowledge, improving accuracy by 4 percentage points.
+              </li>
+              <li>
+                Surveyed RAG architectures for domain-specific settings,
+                comparing pipeline designs and fine-tuning strategies across
+                recent literature.
+              </li>
+              <li>
+                Replicated experiments from prior work on domain-specific
+                fine-tuning for RAG for benchmarking and method development.
+              </li>
+            </ul>
+          </li>
+        </ol>
       </section>
 
       <!-- PROJECTS -->
@@ -139,7 +219,8 @@
               hurting downstream performance.
             </p>
             <p class="tags">
-              <span>SMoE</span><span>Expert Pruning</span><span>Model Merging</span>
+              <span>SMoE</span><span>Expert Pruning</span
+              ><span>Model Merging</span>
             </p>
           </article>
 
@@ -187,33 +268,24 @@
               humorous captions from images.
             </p>
             <p class="tags">
-              <span>Vision-Language Models</span><span>CLIP</span><span>BLIP</span>
+              <span>Vision-Language Models</span><span>CLIP</span
+              ><span>BLIP</span>
             </p>
           </article>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <h2>Experience &amp; Education</h2>
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <h2>Education</h2>
         <ol class="timeline">
           <li>
-            <span class="when">May 2026 – Present · Seattle, WA</span>
-            <h3>Undergraduate Research Assistant</h3>
-            <p class="where">University of Washington, Social Futures Lab</p>
-            <ul>
-              <li>
-                Designed a generative UI agent that guides non-expert users
-                through writing community governance policies. It is the first
-                stage of a multi-stage feedback framework.
-              </li>
-              <li>
-                Built an integration layer that deploys AI-generated policies
-                into PolicyKit's backend as live, platform-agnostic community
-                bots, and designed an event-driven runtime that fixes
-                state-persistence and concurrency bugs in policy execution.
-              </li>
-            </ul>
+            <span class="when"
+              >Mar 2020 – Feb 2027 (Expected) · Seoul, South Korea</span
+            >
+            <h3>B.B.A. Business Administration; B.S. Computer Science</h3>
+            <p class="where">Korea University</p>
+            <p>GPA 4.25/4.5. Dean's Award for a 4.5/4.5 GPA in Fall 2021.</p>
           </li>
           <li>
             <span class="when">Mar 2026 – Jun 2026 · Seattle, WA</span>
@@ -222,36 +294,10 @@
             <p>
               Funded by the Korea-U.S. Student Exchange Program High-Tech
               Industry Scholarship ($9,000 from the South Korean government).
-            </p>
-          </li>
-          <li>
-            <span class="when">Jan 2025 – Feb 2026 · Seoul, South Korea</span>
-            <h3>Undergraduate Research Assistant</h3>
-            <p class="where">Korea University, Trustworthy AI Lab (TAIL)</p>
-            <ul>
-              <li>
-                Proposed a steering-vector mechanism for LLM knowledge fusion
-                that uses confidence scores to choose between external
-                retrieval and the model's internal knowledge, improving
-                accuracy by 4 percentage points.
-              </li>
-              <li>
-                Surveyed RAG architectures for domain-specific settings,
-                comparing pipeline designs and fine-tuning strategies across
-                recent literature.
-              </li>
-              <li>
-                Replicated experiments from prior work on domain-specific
-                fine-tuning for RAG for benchmarking and method development.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <span class="when">Mar 2020 – Feb 2027 (Expected) · Seoul, South Korea</span>
-            <h3>B.B.A. Business Administration; B.S. Computer Science</h3>
-            <p class="where">Korea University</p>
-            <p>
-              GPA 4.25/4.5. Dean's Award for a 4.5/4.5 GPA in Fall 2021.
+              Coursework in political science on misinformation and
+              polarization, including a paper arguing that methodological
+              uncertainty in the minimum wage debate leaves room for motivated
+              reasoning.
             </p>
           </li>
         </ol>
@@ -284,7 +330,7 @@
 
     <footer class="site-footer">
       <p>
-        © <span id="year"></span> Kevin Baek. Built with HTML, CSS &amp; JS,
+        © <span id="year"></span> Minyoung Baek. Built with HTML, CSS &amp; JS,
         hosted on GitHub Pages.
       </p>
     </footer>
