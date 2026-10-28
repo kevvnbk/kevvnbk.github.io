@@ -97,7 +97,7 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: start; }
-.avatar { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 1px solid var(--border); }
+.avatar { width: 180px; height: 225px; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); }
 .skills { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 1.2rem 0 0; }
 .skills li { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.8rem; font-size: 0.9rem; }
 .skill-groups { display: grid; gap: 1rem; margin-top: 1.6rem; }
@@ -165,6 +165,6 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
   }
   .site-nav.open { display: flex; }
   .about-grid { grid-template-columns: 1fr; }
-  .avatar { width: 120px; height: 120px; }
+  .avatar { width: 120px; height: 150px; }
   .hero { padding: 4rem 0 3rem; }
 }
